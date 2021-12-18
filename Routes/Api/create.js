@@ -1,13 +1,12 @@
 const route = require("express").Router();
 const Table = require("../../models/Table");
 
-// A function to check if required InterView Can be scheduled
 async function validate(start, end, id, name) {
   let arr = [];
 
   if (start === "00:00") start = "24:00";
   if (end === "00:00") end = "24:00";
-  // Just For convienience
+  
   await Table.find({}, (err, data) => {
     // We need to Use async keyword because This can take time ......
     arr = data;
@@ -41,8 +40,8 @@ route.post("/", async (req, res, next) => {
   let id = parseInt(req.body.id);
   let name = req.body.name;
 
-  let check = await validate(startTime, endTime, id, name); // Remember We didnt put await here and so it was messing up earlier
-  // because code below this line was executing before execution of this
+  let check = await validate(startTime, endTime, id, name); 
+  
 
   if (check === false) {
     res.render("failure", {
@@ -59,7 +58,7 @@ route.post("/", async (req, res, next) => {
   });
 
   try {
-    await newInterView.save(); // Async is needed else it'll first render the Accepted Page ......
+    await newInterView.save(); 
     res.render("accepted", {
       message: `Interview for ${name} with id ${id} has been scheduled at ${startTime}`,
     });
