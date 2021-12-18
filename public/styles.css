@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(to right, rgb(52, 194, 182), rgb(51, 177, 51));
+}
+input[type="number"],
+select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+select {
+  width: 3%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="time"],
+select {
+  width: 30%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="date"],
+select {
+  width: 30%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+#submit {
+  width: 20%;
+  background-color: #e70e0e;
+  color: rgb(248, 244, 244);
+  font-size: 20px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  width: 20%;
+  background-color: blue;
+  color: rgb(240, 233, 233);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Add a background color to the submit button on mouse-over */
+#submit:hover {
+  background-color: #45a049;
+}
+
+.btn1 {
+  width: 20%;
+  background-color: blue;
+  color: rgb(247, 242, 242);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

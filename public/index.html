@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>InterView Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form action="/api/create" method="POST">
+      <div class="form-group">
+        <label for="exampleFormControlInput1">User ID&nbsp;&nbsp;</label>
+        <input type="number" name="id" class="form-controlid" />
+      </div>
+
+      <div class="form-group">
+        <label for="name">
+          Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </label>
+        <input type="text" name="name" placeholder="Arnab" />
+      </div>
+
+      <div class="form-group">
+        <label for="startTime"> Start Time &nbsp;&nbsp;&nbsp;</label>
+        <input type="time" name="startTime" />
+      </div>
+
+      <div class="form-group">
+        <label for="endTime"> End Time &nbsp;&nbsp;&nbsp;</label>
+        <input type="time" name="endTime" />
+      </div>
+
+      <br /><br />
+
+      <div>
+        <!--<label for="submit"> Create InterView </label>
+            <input name = "btn" type = "submit">
+            -->
+        <button id="submit" name="btn" class="btn">Create Interview</button>
+      </div>
+
+      <p></p>
+    </form>
+
+    <form action="/api/display">
+      <div>
+        <!--<label for="submit"> Show InterView's </label>
+        <input name="btn" class="btn" type="submit" />
+        -->
+        <button id="submit" name="btn" class="btn">Show Interviews</button>
+      </div>
+    </form>
+
+    <form action="edit.html">
+      <div>
+        <!--<label for="submit"> Edit Inter-View </label>
+        <input name="btn1" class="btn1" type="submit" />
+        -->
+        <button id="submit" name="btn1" class="btn1">Edit Interview</button>
+      </div>
+    </form>
+  </body>
+</html>
